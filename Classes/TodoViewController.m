@@ -11,19 +11,29 @@
 
 @implementation TodoViewController
 
-@synthesize todoText, todoPriority, todoStatus, todoStatusSwitch, todo;
+@synthesize todoText, todoPriority, todoStatusSwitch, todo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-		// Initialization code
+		
+		// Custom YES/NO
+		self.todoStatusSwitch = [[UICustomSwitch alloc] initWithFrame:CGRectZero];
+		self.todoStatusSwitch = [UICustomSwitch switchWithLeftText:@"Done" andRight:@"To Do"];
+		CGSize newSize;
+		newSize.width = 1.4;
+		newSize.height = 1.4;
+		[self.todoStatusSwitch scaleSwitch:newSize]; //Uses |newSize| as percentages for the new image
+		self.todoStatusSwitch.center = CGPointMake(160.0f, 110.0f);
+		self.todoStatusSwitch.on = YES;
+	//	[self.todoStatusSwitch addTarget:self action:@selector(updateStatus:) forControlEvents:UIControlEventValueChanged];
+		[self.view addSubview:self.todoStatusSwitch];
+
 	}
 	return self;
 }
 
 - (IBAction) updateStatus:(id)sender {
 	[self.todo updateStatus:!todo.status];
-
-	[self setStatusDisplay];
 }
 
 - (void) setTodoDisplay {
@@ -32,7 +42,6 @@
 	[self.todoText setText:todo.text];
 	
 	[self.todoPriority setSelectedSegmentIndex:todo.priority-1];
-	[self setStatusDisplay];
 }
 
 - (IBAction) updatePriority:(id)sender {
@@ -42,15 +51,6 @@
 
 - (IBAction) updateText:(id) sender {
 	self.todo.text = self.todoText.text;
-}
-
-- (void) setStatusDisplay {
-	todoStatusSwitch.on = todo.status;
-	if(todo.status) {
-		[todoStatus setText:@"Complete"];
-	} else {
-		[todoStatus setText:@"In Progress"];
-	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

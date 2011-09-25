@@ -272,7 +272,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
+									<integer>13</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -327,21 +327,23 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8DCDA232142FAEBB0093CCB9</string>
+										<string>8DCDA313142FBEAB0093CCB9</string>
 										<key>history</key>
 										<array>
 											<string>8DB4E46B142566C5008BD94F</string>
 											<string>8DB4E5C01425BE75008BD94F</string>
 											<string>8DCDA1B9142FA1CC0093CCB9</string>
-											<string>8DCDA1E3142FAB300093CCB9</string>
 											<string>8DCDA1E4142FAB300093CCB9</string>
 											<string>8DCDA1E8142FAB300093CCB9</string>
 											<string>8DCDA20A142FAD2B0093CCB9</string>
-											<string>8DCDA20C142FAD2B0093CCB9</string>
 											<string>8DCDA225142FAE0B0093CCB9</string>
 											<string>8DCDA22E142FAE990093CCB9</string>
-											<string>8DCDA22F142FAE990093CCB9</string>
-											<string>8DCDA230142FAE990093CCB9</string>
+											<string>8DCDA28B142FB8310093CCB9</string>
+											<string>8DCDA2CC142FBB340093CCB9</string>
+											<string>8DCDA2CD142FBB340093CCB9</string>
+											<string>8DCDA2FB142FBE150093CCB9</string>
+											<string>8DCDA2FC142FBE150093CCB9</string>
+											<string>8DCDA2FD142FBE150093CCB9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -539,9 +541,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>8DCDA26D142FB6DE0093CCB9</string>
+		<string>8DCDA26E142FB6DE0093CCB9</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8DB6F6E21422D17E00B90EAD</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/synactive/Desktop/todo/todo.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 142 1440 736 0 0 1440 878 </string>
@@ -565,7 +570,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>TodoViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -582,6 +587,8 @@
 							<string>454pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -882,7 +889,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {737, 477}}</string>
 								<key>RubberWindowFrame</key>
-								<string>84 153 737 518 0 0 1440 878 </string>
+								<string>88 153 737 518 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -911,7 +918,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>84 153 737 518 0 0 1440 878 </string>
+			<string>88 153 737 518 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

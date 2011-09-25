@@ -8,27 +8,26 @@
 
 #import <UIKit/UIKit.h>
 #import "Todo.h"
+#import "UICustomSwitch.h"
 
 @interface TodoViewController : UIViewController {
 	
 	IBOutlet UITextField *todoText;
 	IBOutlet UISegmentedControl *todoPriority;
-	IBOutlet UILabel *todoStatus;
-	IBOutlet UISwitch *todoStatusSwitch;
+	IBOutlet UICustomSwitch *todoStatusSwitch;
 	Todo *todo;
 
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *todoText;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *todoPriority;
-@property (nonatomic, retain) IBOutlet UILabel *todoStatus;
 @property (nonatomic, retain) Todo *todo;
-@property (nonatomic, retain) UISwitch *todoStatusSwitch;
+@property (nonatomic, retain) UICustomSwitch *todoStatusSwitch;
 
 - (IBAction) updateStatus:(id)sender;
 - (IBAction) updatePriority:(id)sender;
 - (IBAction) updateText:(id)sender;
-- (void) setStatusDisplay;
+
 - (void) setTodoDisplay;
 
 @end

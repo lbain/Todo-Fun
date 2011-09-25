@@ -18,6 +18,10 @@
 		8DB4E139142545FB008BD94F /* TodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB4E138142545FB008BD94F /* TodoViewController.xib */; };
 		8DB4E15414254750008BD94F /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4E15214254750008BD94F /* TodoViewController.m */; };
 		8DB6F6CA1422CD9000B90EAD /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB6F6C91422CD9000B90EAD /* libsqlite3.0.dylib */; };
+		8DCDA2D8142FBC190093CCB9 /* UICustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDA2D7142FBC190093CCB9 /* UICustomSwitch.m */; };
+		8DCDA2DC142FBC300093CCB9 /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDA2D9142FBC300093CCB9 /* switchBlueBg.png */; };
+		8DCDA2DD142FBC300093CCB9 /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDA2DA142FBC300093CCB9 /* switchOffPlain.png */; };
+		8DCDA2DE142FBC300093CCB9 /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDA2DB142FBC300093CCB9 /* switchThumb.png */; };
 		8DD2C9BF142504090069E5B7 /* high.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2C9BC142504090069E5B7 /* high.png */; };
 		8DD2C9C0142504090069E5B7 /* low.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2C9BD142504090069E5B7 /* low.png */; };
 		8DD2C9C1142504090069E5B7 /* medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DD2C9BE142504090069E5B7 /* medium.png */; };
@@ -44,6 +48,11 @@
 		8DB4E15114254750008BD94F /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoViewController.h; sourceTree = "<group>"; };
 		8DB4E15214254750008BD94F /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoViewController.m; sourceTree = "<group>"; };
 		8DB6F6C91422CD9000B90EAD /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		8DCDA2D6142FBC190093CCB9 /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSwitch.h; sourceTree = "<group>"; };
+		8DCDA2D7142FBC190093CCB9 /* UICustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSwitch.m; sourceTree = "<group>"; };
+		8DCDA2D9142FBC300093CCB9 /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBlueBg.png; sourceTree = "<group>"; };
+		8DCDA2DA142FBC300093CCB9 /* switchOffPlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOffPlain.png; sourceTree = "<group>"; };
+		8DCDA2DB142FBC300093CCB9 /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchThumb.png; sourceTree = "<group>"; };
 		8DD2C9BC142504090069E5B7 /* high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = high.png; sourceTree = "<group>"; };
 		8DD2C9BD142504090069E5B7 /* low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = low.png; sourceTree = "<group>"; };
 		8DD2C9BE142504090069E5B7 /* medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium.png; sourceTree = "<group>"; };
@@ -72,6 +81,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8DCDA2D6142FBC190093CCB9 /* UICustomSwitch.h */,
+				8DCDA2D7142FBC190093CCB9 /* UICustomSwitch.m */,
 				8DD2CA65142517550069E5B7 /* Todo.h */,
 				8DD2CA66142517550069E5B7 /* Todo.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
@@ -118,6 +129,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8DCDA2D9142FBC300093CCB9 /* switchBlueBg.png */,
+				8DCDA2DA142FBC300093CCB9 /* switchOffPlain.png */,
+				8DCDA2DB142FBC300093CCB9 /* switchThumb.png */,
 				8DD2CADD1425267F0069E5B7 /* todo1.sqlite */,
 				8DD2C9BC142504090069E5B7 /* high.png */,
 				8DD2C9BD142504090069E5B7 /* low.png */,
@@ -198,6 +212,9 @@
 				8DD2C9C1142504090069E5B7 /* medium.png in Resources */,
 				8DD2CADE1425267F0069E5B7 /* todo1.sqlite in Resources */,
 				8DB4E139142545FB008BD94F /* TodoViewController.xib in Resources */,
+				8DCDA2DC142FBC300093CCB9 /* switchBlueBg.png in Resources */,
+				8DCDA2DD142FBC300093CCB9 /* switchOffPlain.png in Resources */,
+				8DCDA2DE142FBC300093CCB9 /* switchThumb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +231,7 @@
 				8DD2C9C5142504800069E5B7 /* TodoCell.m in Sources */,
 				8DD2CA67142517550069E5B7 /* Todo.m in Sources */,
 				8DB4E15414254750008BD94F /* TodoViewController.m in Sources */,
+				8DCDA2D8142FBC190093CCB9 /* UICustomSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
