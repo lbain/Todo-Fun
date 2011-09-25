@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* todoAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 563}}";
+			sepNavSelRange = "{635, 0}";
+			sepNavVisRange = "{0, 643}";
+		};
+	};
+	1D3623250D0F684500981E51 /* todoAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{453, 52}\";\n            s = 0;\n        },\n                {\n            r = \"{935, 767}\";\n            s = 0;\n        },\n                {\n            r = \"{3163, 178}\";\n            s = 0;\n        },\n                {\n            r = \"{3361, 71}\";\n            s = 0;\n        },\n                {\n            r = \"{3552, 446}\";\n            s = 0;\n        },\n                {\n            r = \"{4070, 351}\";\n            s = 0;\n        },\n                {\n            r = \"{4494, 165}\";\n            s = 0;\n        },\n                {\n            r = \"{4728, 205}\";\n            s = 0;\n        },\n                {\n            r = \"{5060, 140}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5213}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 1365}}";
+			sepNavSelRange = "{2841, 0}";
+			sepNavVisRange = "{2103, 625}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* todo */ = {
+		activeExec = 0;
+		executables = (
+			8DB6F6C01422CD1F00B90EAD /* todo */,
+		);
+	};
+	28A0AAE50D9B0CCF005BE974 /* todo_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 422}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 314}";
+		};
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 563}}";
+			sepNavSelRange = "{345, 0}";
+			sepNavVisRange = "{0, 352}";
+			sepNavWindowFrame = "{{15, 86}, {1226, 787}}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{318, 550}\";\n            s = 0;\n        },\n                {\n            r = \"{1569, 363}\";\n            s = 0;\n        },\n                {\n            r = \"{2002, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{2110, 132}\";\n            s = 0;\n        },\n                {\n            r = \"{2349, 481}\";\n            s = 0;\n        },\n                {\n            r = \"{3516, 68}\";\n            s = 0;\n        },\n                {\n            r = \"{3625, 34}\";\n            s = 0;\n        },\n                {\n            r = \"{3704, 1}\";\n            s = 0;\n        },\n                {\n            r = \"{3749, 1}\";\n            s = 0;\n        },\n                {\n            r = \"{3846, 109}\";\n            s = 0;\n        },\n                {\n            r = \"{3991, 172}\";\n            s = 0;\n        },\n                {\n            r = \"{4189, 133}\";\n            s = 0;\n        },\n                {\n            r = \"{4342, 22}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4373}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 1027}}";
+			sepNavSelRange = "{838, 0}";
+			sepNavVisRange = "{691, 1559}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 8DB6F6C01422CD1F00B90EAD /* todo */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* todo */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* todo */,
+		);
+		breakpoints = (
+			8DB4E48914256719008BD94F /* TodoViewController.m:45 */,
+			8DB4E4EF1425824C008BD94F /* RootViewController.m:104 */,
+			8DB4E4F114258254008BD94F /* RootViewController.m:104 */,
+			8DB4E5C51425BE9C008BD94F /* RootViewController.m:48 */,
+		);
+		codeSenseManager = 8DB6F6C61422CD3E00B90EAD /* Code sense */;
+		executables = (
+			8DB6F6C01422CD1F00B90EAD /* todo */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					946,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 337995475;
+			PBXWorkspaceStateSaveDate = 337995475;
+		};
+		perUserProjectItems = {
+			8DB4E46B142566C5008BD94F /* PBXTextBookmark */ = 8DB4E46B142566C5008BD94F /* PBXTextBookmark */;
+			8DB4E5AE1425BDF3008BD94F /* PBXTextBookmark */ = 8DB4E5AE1425BDF3008BD94F /* PBXTextBookmark */;
+			8DB4E5B01425BDF3008BD94F /* PBXTextBookmark */ = 8DB4E5B01425BDF3008BD94F /* PBXTextBookmark */;
+			8DB4E5B21425BDF3008BD94F /* PBXTextBookmark */ = 8DB4E5B21425BDF3008BD94F /* PBXTextBookmark */;
+			8DB4E5C01425BE75008BD94F /* PBXTextBookmark */ = 8DB4E5C01425BE75008BD94F /* PBXTextBookmark */;
+			8DB4E5E61425C0A7008BD94F /* PBXTextBookmark */ = 8DB4E5E61425C0A7008BD94F /* PBXTextBookmark */;
+			8DB4E5E71425C0A7008BD94F /* PBXTextBookmark */ = 8DB4E5E71425C0A7008BD94F /* PBXTextBookmark */;
+			8DB4E5E81425C0A7008BD94F /* PBXTextBookmark */ = 8DB4E5E81425C0A7008BD94F /* PBXTextBookmark */;
+			8DB4E5E91425C0A7008BD94F /* PBXTextBookmark */ = 8DB4E5E91425C0A7008BD94F /* PBXTextBookmark */;
+			8DB4E5EA1425C0A7008BD94F /* PBXTextBookmark */ = 8DB4E5EA1425C0A7008BD94F /* PBXTextBookmark */;
+			8DB4E5F61425C101008BD94F /* PBXTextBookmark */ = 8DB4E5F61425C101008BD94F /* PBXTextBookmark */;
+			8DB4E5F71425C101008BD94F /* PBXTextBookmark */ = 8DB4E5F71425C101008BD94F /* PBXTextBookmark */;
+			8DB4E5FB1425C1AC008BD94F /* PBXTextBookmark */ = 8DB4E5FB1425C1AC008BD94F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 8DB6F6C51422CD3E00B90EAD /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8DB4E15114254750008BD94F /* TodoViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 563}}";
+			sepNavSelRange = "{855, 0}";
+			sepNavVisRange = "{0, 863}";
+			sepNavWindowFrame = "{{15, 86}, {1226, 787}}";
+		};
+	};
+	8DB4E15214254750008BD94F /* TodoViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{357, 117}\";\n            s = 0;\n        },\n                {\n            r = \"{1651, 109}\";\n            s = 0;\n        },\n                {\n            r = \"{1976, 22}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 2007}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 1001}}";
+			sepNavSelRange = "{733, 0}";
+			sepNavVisRange = "{351, 648}";
+			sepNavWindowFrame = "{{716, 66}, {1226, 787}}";
+		};
+	};
+	8DB4E46B142566C5008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28A0AAE50D9B0CCF005BE974 /* todo_Prefix.pch */;
+		name = "todo_Prefix.pch: 15";
+		rLen = 0;
+		rLoc = 314;
+		rType = 0;
+		vrLen = 314;
+		vrLoc = 0;
+	};
+	8DB4E48914256719008BD94F /* TodoViewController.m:45 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 8DB4E15214254750008BD94F /* TodoViewController.m */;
+		functionName = "-updatePriority:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 45;
+		location = todo;
+		modificationTime = 338017956.808861;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	8DB4E4EF1425824C008BD94F /* RootViewController.m:104 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-tableView:didSelectRowAtIndexPath:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 104;
+		location = todo;
+		modificationTime = 338017956.80918;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	8DB4E4F114258254008BD94F /* RootViewController.m:104 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-tableView:didSelectRowAtIndexPath:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 104;
+		location = todo;
+		modificationTime = 338017956.809393;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	8DB4E5AE1425BDF3008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DD2C9C4142504800069E5B7 /* TodoCell.m */;
+		name = "TodoCell.m: 74";
+		rLen = 0;
+		rLoc = 2182;
+		rType = 0;
+		vrLen = 947;
+		vrLoc = 1953;
+	};
+	8DB4E5B01425BDF3008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DD2C9C3142504800069E5B7 /* TodoCell.h */;
+		name = "TodoCell.h: 23";
+		rLen = 0;
+		rLoc = 578;
+		rType = 0;
+		vrLen = 690;
+		vrLoc = 0;
+	};
+	8DB4E5B21425BDF3008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DD2CA65142517550069E5B7 /* Todo.h */;
+		name = "Todo.h: 34";
+		rLen = 0;
+		rLoc = 777;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 0;
+	};
+	8DB4E5C01425BE75008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DB4E5C11425BE75008BD94F /* UINavigationController.h */;
+		name = "UINavigationController.h: 73";
+		rLen = 188;
+		rLoc = 2781;
+		rType = 0;
+		vrLen = 3360;
+		vrLoc = 1778;
+	};
+	8DB4E5C11425BE75008BD94F /* UINavigationController.h */ = {
+		isa = PBXFileReference;
+		name = UINavigationController.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationController.h;
+		sourceTree = "<absolute>";
+	};
+	8DB4E5C51425BE9C008BD94F /* RootViewController.m:48 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		functionName = "-addTodo:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 48;
+		location = todo;
+		modificationTime = 338017975.060038;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	8DB4E5E61425C0A7008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 16";
+		rLen = 0;
+		rLoc = 345;
+		rType = 0;
+		vrLen = 352;
+		vrLoc = 0;
+	};
+	8DB4E5E71425C0A7008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* todoAppDelegate.m */;
+		name = "todoAppDelegate.m: 95";
+		rLen = 0;
+		rLoc = 2871;
+		rType = 0;
+		vrLen = 1609;
+		vrLoc = 1734;
+	};
+	8DB4E5E81425C0A7008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* todoAppDelegate.h */;
+		name = "todoAppDelegate.h: 28";
+		rLen = 0;
+		rLoc = 635;
+		rType = 0;
+		vrLen = 643;
+		vrLoc = 0;
+	};
+	8DB4E5E91425C0A7008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DB4E15114254750008BD94F /* TodoViewController.h */;
+		name = "TodoViewController.h: 32";
+		rLen = 0;
+		rLoc = 855;
+		rType = 0;
+		vrLen = 863;
+		vrLoc = 0;
+	};
+	8DB4E5EA1425C0A7008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DB4E15214254750008BD94F /* TodoViewController.m */;
+		name = "TodoViewController.m: 37";
+		rLen = 0;
+		rLoc = 727;
+		rType = 0;
+		vrLen = 1114;
+		vrLoc = 207;
+	};
+	8DB4E5F61425C101008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 48";
+		rLen = 0;
+		rLoc = 1387;
+		rType = 0;
+		vrLen = 2925;
+		vrLoc = 1240;
+	};
+	8DB4E5F71425C101008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DD2CA66142517550069E5B7 /* Todo.m */;
+		name = "Todo.m: 51";
+		rLen = 0;
+		rLoc = 1426;
+		rType = 0;
+		vrLen = 1367;
+		vrLoc = 721;
+	};
+	8DB4E5FB1425C1AC008BD94F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8DD2CA66142517550069E5B7 /* Todo.m */;
+		name = "Todo.m: 51";
+		rLen = 0;
+		rLoc = 1423;
+		rType = 0;
+		vrLen = 1275;
+		vrLoc = 834;
+	};
+	8DB6F6C01422CD1F00B90EAD /* todo */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = todo;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	8DB6F6C51422CD3E00B90EAD /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8DB6F6C61422CD3E00B90EAD /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8DD2C9C3142504800069E5B7 /* TodoCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 563}}";
+			sepNavSelRange = "{578, 0}";
+			sepNavVisRange = "{0, 690}";
+		};
+	};
+	8DD2C9C4142504800069E5B7 /* TodoCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 2392}}";
+			sepNavSelRange = "{2182, 0}";
+			sepNavVisRange = "{1953, 947}";
+			sepNavWindowFrame = "{{15, 86}, {1226, 787}}";
+		};
+	};
+	8DD2CA65142517550069E5B7 /* Todo.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1124, 563}}";
+			sepNavSelRange = "{777, 0}";
+			sepNavVisRange = "{0, 784}";
+		};
+	};
+	8DD2CA66142517550069E5B7 /* Todo.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 1716}}";
+			sepNavSelRange = "{2429, 0}";
+			sepNavVisRange = "{2091, 348}";
+		};
+	};
+}
