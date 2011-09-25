@@ -14,7 +14,7 @@
 	IBOutlet UITextField *todoText;
 	IBOutlet UISegmentedControl *todoPriority;
 	IBOutlet UILabel *todoStatus;
-	IBOutlet UIButton *todoButton;
+	IBOutlet UISwitch *todoStatusSwitch;
 	Todo *todo;
 
 }
@@ -22,8 +22,8 @@
 @property (nonatomic, retain) IBOutlet UITextField *todoText;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *todoPriority;
 @property (nonatomic, retain) IBOutlet UILabel *todoStatus;
-@property (nonatomic, retain) IBOutlet UIButton *todoButton;
 @property (nonatomic, retain) Todo *todo;
+@property (nonatomic, retain) UISwitch *todoStatusSwitch;
 
 - (IBAction) updateStatus:(id)sender;
 - (IBAction) updatePriority:(id)sender;

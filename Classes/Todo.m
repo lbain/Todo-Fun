@@ -48,7 +48,7 @@ static sqlite3_stmt *insert_statement = nil;
 
 + (NSInteger) insertNewTodoIntoDatabase:(sqlite3 *)database {
 	if (insert_statement == nil) {
-		static char*sql = "INSERT INTO todo (text,priority,complete) VALUES('New Todo', 1, 1)";
+		static char*sql = "INSERT INTO todo (text,priority,complete) VALUES('New Todo', 1, 0)";
 		if (sqlite3_prepare_v2(database, sql, -1, &insert_statement, NULL) != SQLITE_OK) {
 			NSAssert1(0, @"Error: failed to prepare statement with message '%s'.", sqlite3_errmsg(database));
 		}
@@ -90,7 +90,7 @@ static sqlite3_stmt *insert_statement = nil;
 	int success = sqlite3_step(delete_statement);
 	
 	if (success != SQLITE_DONE) {
-		NSAssert1(0, @"Error: failed to save priority with message '%s'.", sqlite3_errmsg(database));
+		NSAssert1(0, @"Error: failed to delete todo from database with message '%s'.", sqlite3_errmsg(database));
 	}
 	
 	sqlite3_reset(delete_statement);

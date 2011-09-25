@@ -18,11 +18,13 @@
 	
 	sqlite3 *database;
 	NSMutableArray *todos;
+	NSString *pathComponent;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 @property (nonatomic, retain) NSMutableArray *todos;
+@property (nonatomic, retain) NSString *pathComponent;
 
 - (Todo *) addTodo;
 - (void) removeTodo:(Todo *)todo;

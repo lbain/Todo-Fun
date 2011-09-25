@@ -27,9 +27,6 @@
 															action:@selector(addTodo:)];
 	
 	self.navigationItem.rightBarButtonItem = btn;
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void) addTodo:(id) sender {
@@ -49,7 +46,7 @@
 }
 
 - (void) tableView: (UITableView *) tableView commitEditingStyle:(UITableViewCellEditingStyle)editingSytle
- forRowAtIndexPath:(NSIndexPath *)indexPath {
+											   forRowAtIndexPath:(NSIndexPath *)indexPath {
 	todoAppDelegate *appDelegate = (todoAppDelegate *) [[UIApplication sharedApplication] delegate];
 	
 	Todo *todo = (Todo *)[appDelegate.todos objectAtIndex:indexPath.row];
@@ -72,8 +69,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
-    
-	
 	
     TodoCell *cell = (TodoCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {

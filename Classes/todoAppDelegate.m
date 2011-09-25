@@ -23,10 +23,12 @@
 @synthesize window;
 @synthesize navigationController;
 @synthesize todos;
+@synthesize pathComponent;
 
 - (id)init {
 	if (self = [super init]) {
-		// 
+		pathComponent = [[NSString alloc] init];
+		pathComponent = @"todo1.sqlite";
 	}
 	return self;
 }
@@ -49,15 +51,15 @@
 	NSError *error;
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex:0];
-	NSString *writeableDBPath = [documentsDirectory stringByAppendingPathComponent:@"todo1.sqlite"];
+	NSString *writeableDBPath = [documentsDirectory stringByAppendingPathComponent:self.pathComponent];
 	success = [fileManager fileExistsAtPath:writeableDBPath];
 	
-	if(success) return;
-	
-	NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"todo1.sqlite"];
-	success = [fileManager copyItemAtPath:defaultDBPath toPath:writeableDBPath error:&error];
-	if (!success) {
-		NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+	if(!success) {
+		NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.pathComponent];
+		success = [fileManager copyItemAtPath:defaultDBPath toPath:writeableDBPath error:&error];
+		if (!success) {
+			NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+		}
 	}
 }
 
@@ -68,7 +70,7 @@
 	
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex:0];
-	NSString *path = [documentsDirectory stringByAppendingPathComponent:@"todo1.sqlite"];
+	NSString *path = [documentsDirectory stringByAppendingPathComponent:self.pathComponent];
 	
 	if (sqlite3_open([path UTF8String], &database) == SQLITE_OK) {
 		const char *sql = "SELECT pk FROM todo";
@@ -99,7 +101,10 @@
 - (void) removeTodo:(Todo *)todo {
 	NSUInteger index = [todos indexOfObject:todo];
 	
-	if (index == NSNotFound) return;
+	if (index == NSNotFound) {
+		NSLog(@"Todo item not found");
+		return;
+	}
 	
 	[todo deleteFromDatabase];
 	[todos removeObject:todo];
@@ -151,9 +156,6 @@
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
 }
-
-
-
 
 
 #pragma mark -

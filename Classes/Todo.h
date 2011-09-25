@@ -16,7 +16,7 @@
 	NSString *text;
 	NSInteger primaryKey;
 	NSInteger priority;
-	NSInteger status;
+	BOOL status;
 	BOOL dirty;
 
 }
@@ -24,7 +24,7 @@
 @property (assign, nonatomic, readonly) NSInteger primaryKey;
 @property (nonatomic, retain) NSString *text;
 @property (nonatomic) NSInteger priority;
-@property (nonatomic) NSInteger status;
+@property (nonatomic) BOOL status;
 
 - (id) initWithPrimaryKey:(NSInteger)pk database:(sqlite3*)db;
 - (void) updateStatus:(NSInteger) newStatus;

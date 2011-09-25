@@ -11,7 +11,7 @@
 
 @implementation TodoViewController
 
-@synthesize todoText, todoPriority, todoStatus, todoButton, todo;
+@synthesize todoText, todoPriority, todoStatus, todoStatusSwitch, todo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -21,13 +21,8 @@
 }
 
 - (IBAction) updateStatus:(id)sender {
-	//if todo is complete
-	if(todo.status == 0) {
-		[self.todo updateStatus:1];
-	} else {
-		[self.todo updateStatus:0];
-	}
-	
+	[self.todo updateStatus:!todo.status];
+
 	[self setStatusDisplay];
 }
 
@@ -50,14 +45,10 @@
 }
 
 - (void) setStatusDisplay {
-	if(todo.status == 0) {
-		[todoButton setTitle:@"Mark As In Progress" forState:UIControlStateNormal];
-		[todoButton setTitle:@"Mark As In Progress" forState:UIControlStateHighlighted];
+	todoStatusSwitch.on = todo.status;
+	if(todo.status) {
 		[todoStatus setText:@"Complete"];
-		//if todo is in progress
 	} else {
-		[todoButton setTitle:@"Mark As Complete" forState:UIControlStateNormal];
-		[todoButton setTitle:@"Mark As Complete" forState:UIControlStateHighlighted];
 		[todoStatus setText:@"In Progress"];
 	}
 }
