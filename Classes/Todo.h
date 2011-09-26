@@ -14,6 +14,7 @@
 	
 	sqlite3 *database;
 	NSString *text;
+	NSDate *dueDate;
 	NSInteger primaryKey;
 	NSInteger priority;
 	BOOL status;
@@ -24,11 +25,13 @@
 @property (assign, nonatomic, readonly) NSInteger primaryKey;
 @property (nonatomic, retain) NSString *text;
 @property (nonatomic) NSInteger priority;
+@property (nonatomic, retain) NSDate *dueDate;
 @property (nonatomic) BOOL status;
 
 - (id) initWithPrimaryKey:(NSInteger)pk database:(sqlite3*)db;
 - (void) updateStatus:(NSInteger) newStatus;
 - (void) updatePriority:(NSInteger) newPriority;
+- (void) updateDueDate:(NSDate *)newDate;
 - (void) dehydrate;
 - (void) deleteFromDatabase;
 + (NSInteger) insertNewTodoIntoDatabase:(sqlite3 *)database;

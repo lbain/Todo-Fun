@@ -15,7 +15,7 @@ static sqlite3_stmt *insert_statement = nil;
 
 @implementation Todo
 
-@synthesize primaryKey, text, priority, status;
+@synthesize primaryKey, text, dueDate, priority, status;
 
 -(id) initWithPrimaryKey:(NSInteger)pk database:(sqlite3*)db
 {
@@ -24,7 +24,7 @@ static sqlite3_stmt *insert_statement = nil;
 		database = db;
 		
 		if (init_statement == nil) {
-			const char *sql = "SELECT text,priority,complete FROM todo WHERE pk=?";
+			const char *sql = "SELECT text,priority,complete,dueDate FROM todo WHERE pk=?";
 			
 			if (sqlite3_prepare_v2(database, sql, -1, &init_statement, NULL) != SQLITE_OK) {
 				NSAssert1(0, @"Error: failed to prepare statement with message'%s'.", sqlite3_errmsg(database));
@@ -37,11 +37,14 @@ static sqlite3_stmt *insert_statement = nil;
 		self.text = [NSString stringWithUTF8String:(char *)sqlite3_column_text(init_statement, 0)];
 		self.priority = sqlite3_column_int(init_statement,1);
 		self.status = sqlite3_column_int(init_statement, 2);
+		[self setDueDate:[NSDate dateWithTimeIntervalSince1970:(int)sqlite3_column_int(init_statement, 3)]];
 	} else {
 		self.text = @"NOTHING - good job!";
 	}
 	
 	sqlite3_reset(init_statement);
+	
+	dueDate = [[NSDate date] retain];
 	
 	return self;
 }
@@ -73,6 +76,11 @@ static sqlite3_stmt *insert_statement = nil;
 	dirty = YES;
 }
 
+- (void) updateDueDate:(NSDate *)newDate {
+	[self setDueDate:newDate];
+	dirty = YES;
+}
+
 - (Todo *) todo
 {
 	return self.todo;
@@ -99,13 +107,14 @@ static sqlite3_stmt *insert_statement = nil;
 - (void) dehydrate {
 	if (dirty) {
 		if (dehydrate_statement == nil) {
-			const char *sql = "UPDATE todo SET text = ?, priority = ?, complete = ?, WHERE pk = ?";
+			const char *sql = "UPDATE todo SET text = ?, priority = ?, complete = ?, dueDate = ?, WHERE pk = ?";
 			if (sqlite3_prepare_v2(database, sql, -2, &dehydrate_statement, NULL) != SQLITE_OK) {
 				NSAssert1(0, @"Error: failed to prepare statement with mesage '%s'.", sqlite3_errmsg(database));
 			}
 		}
 	
-		sqlite3_bind_int(dehydrate_statement, 4, self.primaryKey);
+		sqlite3_bind_int(dehydrate_statement, 5, self.primaryKey);
+		sqlite3_bind_int(dehydrate_statement, 4, [self.dueDate timeIntervalSince1970]);
 		sqlite3_bind_int(dehydrate_statement, 3, self.status);
 		sqlite3_bind_int(dehydrate_statement, 2, self.priority);
 		sqlite3_bind_int(dehydrate_statement, 1, *[self.text UTF8String]);

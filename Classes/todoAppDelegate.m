@@ -28,7 +28,7 @@
 - (id)init {
 	if (self = [super init]) {
 		pathComponent = [[NSString alloc] init];
-		pathComponent = @"todo1.sqlite";
+		pathComponent = @"todo2.sqlite";
 	}
 	return self;
 }
