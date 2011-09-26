@@ -16,6 +16,7 @@
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
 		8DA68964142FE16B00CDD8A1 /* todo2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8DA68963142FE16B00CDD8A1 /* todo2.sqlite */; };
+		8DA68A4114301A7B00CDD8A1 /* test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA68A4014301A7B00CDD8A1 /* test.xib */; };
 		8DB4E139142545FB008BD94F /* TodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB4E138142545FB008BD94F /* TodoViewController.xib */; };
 		8DB4E15414254750008BD94F /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4E15214254750008BD94F /* TodoViewController.m */; };
 		8DB6F6CA1422CD9000B90EAD /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB6F6C91422CD9000B90EAD /* libsqlite3.0.dylib */; };
@@ -46,6 +47,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* todo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "todo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		8DA68963142FE16B00CDD8A1 /* todo2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = todo2.sqlite; sourceTree = "<group>"; };
+		8DA68A4014301A7B00CDD8A1 /* test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = test.xib; sourceTree = "<group>"; };
 		8DB4E138142545FB008BD94F /* TodoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoViewController.xib; sourceTree = "<group>"; };
 		8DB4E15114254750008BD94F /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoViewController.h; sourceTree = "<group>"; };
 		8DB4E15214254750008BD94F /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoViewController.m; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				8DA68A4014301A7B00CDD8A1 /* test.xib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				8DCDA2DD142FBC300093CCB9 /* switchOffPlain.png in Resources */,
 				8DCDA2DE142FBC300093CCB9 /* switchThumb.png in Resources */,
 				8DA68964142FE16B00CDD8A1 /* todo2.sqlite in Resources */,
+				8DA68A4114301A7B00CDD8A1 /* test.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

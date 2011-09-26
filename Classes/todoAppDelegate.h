@@ -28,6 +28,7 @@
 
 - (Todo *) addTodo;
 - (void) removeTodo:(Todo *)todo;
+- (void) sortByDueDate;
 
 @end
 

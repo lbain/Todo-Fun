@@ -57,12 +57,6 @@
 - (IBAction) updateDueDate:(id) sender {
 	//get date
 	NSDate *selectedDate = [[datePicker date] retain];
-	//check if date is different
-	if(selectedDate == todo.dueDate)
-	{
-		NSLog(@"same date selected - no changes");
-		return;
-	}
 	//update todo object's date
 	[todo updateDueDate:selectedDate];
 }

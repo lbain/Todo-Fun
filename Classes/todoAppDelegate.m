@@ -110,6 +110,16 @@
 	[todos removeObject:todo];
 }
 
+- (void) sortByDueDate {
+	NSSortDescriptor *sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"dueDate" ascending:YES] autorelease];
+	NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+	
+	NSArray *sortedList;
+	sortedList = [todos sortedArrayUsingDescriptors:sortDescriptors];
+	
+	todos = [sortedList mutableCopy];
+}
+
 - (void)applicationWillTerminate:(UIApplication *)application {
     /*
      Called when the application is about to terminate.

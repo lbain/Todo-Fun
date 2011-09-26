@@ -36,4 +36,6 @@
 - (void) deleteFromDatabase;
 + (NSInteger) insertNewTodoIntoDatabase:(sqlite3 *)database;
 
+- (void) printDueDate;
+
 @end

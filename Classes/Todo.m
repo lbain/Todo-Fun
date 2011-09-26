@@ -38,13 +38,9 @@ static sqlite3_stmt *insert_statement = nil;
 		self.priority = sqlite3_column_int(init_statement,1);
 		self.status = sqlite3_column_int(init_statement, 2);
 		[self setDueDate:[NSDate dateWithTimeIntervalSince1970:(int)sqlite3_column_int(init_statement, 3)]];
-	} else {
-		self.text = @"NOTHING - good job!";
 	}
 	
 	sqlite3_reset(init_statement);
-	
-	dueDate = [[NSDate date] retain];
 	
 	return self;
 }
@@ -79,6 +75,14 @@ static sqlite3_stmt *insert_statement = nil;
 - (void) updateDueDate:(NSDate *)newDate {
 	[self setDueDate:newDate];
 	dirty = YES;
+}
+
+- (void) printDueDate {
+	NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+	[dateFormat setDateFormat:@"yyyy-MM-dd HH:mm"];
+	NSString *printDate = [dateFormat stringFromDate:[self dueDate]];
+	NSLog(@"The date is: %@", printDate);
+	[dateFormat release];
 }
 
 - (Todo *) todo

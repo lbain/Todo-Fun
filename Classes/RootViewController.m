@@ -13,7 +13,7 @@
 
 @implementation RootViewController
 
-@synthesize todoView;
+@synthesize todoView, toolbar, appDelegate;
 
 - (void)viewDidLoad {
     //[super viewDidLoad];
@@ -21,16 +21,41 @@
 	self.title = @"Things To Do";
 	self.navigationItem.leftBarButtonItem = self.editButtonItem;
 	
-	UIBarButtonItem * btn = [[UIBarButtonItem alloc] initWithTitle:@"Add" 
+	UIBarButtonItem * addItem = [[UIBarButtonItem alloc] initWithTitle:@"Add" 
 															 style:UIBarButtonItemStyleBordered 
 															target:self 
 															action:@selector(addTodo:)];
+	UIBarButtonItem * sortElements = [[UIBarButtonItem alloc] initWithTitle:@"Sort" 
+															 style:UIBarButtonItemStyleBordered 
+															target:self 
+															action:@selector(sortDisplay)];
+	self.navigationItem.rightBarButtonItem = addItem;
 	
-	self.navigationItem.rightBarButtonItem = btn;
+	
+	toolbar = [[UIToolbar alloc] init];
+	toolbar.barStyle = UIBarStyleDefault;
+	
+	[toolbar sizeToFit];
+	CGFloat toolbarHeight = [toolbar frame].size.height;
+	CGRect viewBounds = self.parentViewController.view.bounds;
+	CGFloat rootViewHeight = CGRectGetHeight(viewBounds);
+	CGFloat rootViewWidth = CGRectGetWidth(viewBounds);
+	CGRect rectArea = CGRectMake(0, rootViewHeight - toolbarHeight, rootViewWidth, toolbarHeight);
+	
+	[toolbar setFrame:rectArea];
+	
+	[self.navigationController.view addSubview:toolbar];
+	
+	NSMutableArray *footerButtons = [[NSMutableArray alloc] init];
+	[footerButtons addObject:sortElements];
+	
+	[toolbar setItems:footerButtons];
+	
+	appDelegate = (todoAppDelegate *)[[[UIApplication sharedApplication] delegate]retain];
+	
 }
 
 - (void) addTodo:(id) sender {
-	todoAppDelegate *appDelegate = (todoAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	if (self.todoView == nil) {
 		TodoViewController *viewController = [[TodoViewController alloc]
@@ -45,9 +70,13 @@
 	[todoView setTodoDisplay];
 }
 
+- (void) sortDisplay {
+	[appDelegate sortByDueDate];
+	[[self tableView] reloadData];
+}
+
 - (void) tableView: (UITableView *) tableView commitEditingStyle:(UITableViewCellEditingStyle)editingSytle
 											   forRowAtIndexPath:(NSIndexPath *)indexPath {
-	todoAppDelegate *appDelegate = (todoAppDelegate *) [[UIApplication sharedApplication] delegate];
 	
 	Todo *todo = (Todo *)[appDelegate.todos objectAtIndex:indexPath.row];
 	
@@ -62,7 +91,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	todoAppDelegate *appDelegate = (todoAppDelegate *) [[UIApplication sharedApplication] delegate];
 	return appDelegate.todos.count;
 }
 
@@ -74,8 +102,6 @@
 	if (cell == nil) {
 		cell = [[[TodoCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
 	}
-	
-	todoAppDelegate *appDelegate = (todoAppDelegate *) [[UIApplication sharedApplication] delegate];
 	Todo *td = [appDelegate.todos objectAtIndex:indexPath.row];
 	
 	[cell setTodo:td];
@@ -84,7 +110,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	todoAppDelegate *appDelegate = (todoAppDelegate *)[[UIApplication sharedApplication] delegate];
 	Todo *todo = (Todo *)[appDelegate.todos objectAtIndex:indexPath.row];
 	
 	if(self.todoView == nil) {
@@ -131,6 +156,7 @@
 }
 
 - (void)dealloc {
+	[appDelegate release];
     [super dealloc];
 }
 
